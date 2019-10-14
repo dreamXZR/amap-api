@@ -1,27 +1,32 @@
-<h1 align="center"> amap-api </h1>
+<h1 align="center"> 高德地图api </h1>
 
-<p align="center"> nothing.</p>
+<p align="center"> 基于laravel的高德开放平台api扩展包 </p>
 
+## 使用要求
+- PHP >=7.0
+- Laravel >= 5.5
 
-## Installing
+## 安装
 
 ```shell
 $ composer require dreamxzr/amap-api -vvv
 ```
 
-## Usage
+## 配置
 
-TODO
-
-## Contributing
-
-You can contribute in one of three ways:
-
-1. File bug reports using the [issue tracker](https://github.com/dreamxzr/amap-api/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/dreamxzr/amap-api/issues).
-3. Contribute new features or update the wiki.
-
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
+1.发布配置文件
+```shell
+php artisan vendor:publish --provider="Dreamxzr\AmapApi\ServiceProvider"
+```
+2.在.env文件添加
+```shell
+AMAP-KEY=高德开放平台api
+```
+## 使用
+1.天气接口
+```shell
+app('amap-weather')->getWeather('城市名');
+```
 
 ## License
 
