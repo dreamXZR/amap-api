@@ -1,0 +1,26 @@
+{
+    "name": "dreamxzr\/amap-api",
+    "description": "nothing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dreamxzr",
+            "email": "xzr2873917821@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dreamxzr\\AmapApi\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dreamxzr\\AmapApi\\ServiceProvider"
+            ]
+        }
+    }
+}
