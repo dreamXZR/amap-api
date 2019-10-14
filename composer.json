@@ -1,6 +1,6 @@
 {
     "name": "dreamxzr\/amap-api",
-    "description": "nothing",
+    "description": "基于laravel的高德开放平台api扩展包",
     "license": "MIT",
     "authors": [
         {
